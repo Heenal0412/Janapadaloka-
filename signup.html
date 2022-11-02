@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+	<link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+
+<body>
+
+    <style>
+       
+        form {
+            max-width: 500px;
+            margin: auto;
+            padding: 50px;
+        }
+    </style>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="" alt="logo" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li> <a href="">Home</a></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="">Products</a></li>
+                <li> <a href="page.php">Registration Page</a></li>
+                
+            </ul>
+        </nav>
+        <img src="images/cart.png" alt="" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+
+    <div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+            <div class="wrap-login100">
+                <form action="action_page.php" style="border:1px solid #ccc">
+                    <div class="container">
+                        <h1>Sign Up</h1>
+                        <p>Please fill in this form to create an account.</p>
+                        <hr>
+
+                        <label for="name"><b>Name: </b></label>
+                        <input type="text" placeholder="Enter name" name="name" required><br><br>
+
+                        <label for="number"><b>Mobile: </b></label>
+                        <input type="number" placeholder="Enter number" name="number" required><br><br>
+
+                        <label for="email"><b>Email: </b></label>
+                        <input type="text" placeholder="Enter email" name="email" required><br><br>
+
+                        <label for="psw"><b>Password:  </b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+                        <label for="psw-repeat"><b>Repeat Password:</b></label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br><br>
+
+                        <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <div class="container-login100-form-btn">
+                        <button class="login100-form-btn">
+                            Sign-Up
+                        </button>
+                        </div>
+
+                        <!-- <div class="text-center p-t-90">
+                            <a class="txt1" href="#">
+                                Cancel
+                            </a>
+                        </div> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

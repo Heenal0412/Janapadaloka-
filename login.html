@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" type="text/css" href="style3.css">
+	<link rel="stylesheet" type="text/css" href="style4.css">
+</head>
+
+<body>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 50px;
+        }
+    </style>
+
+    <div class="header">
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="" alt="logo" width="125px">
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li> <a href="">Home</a></li>
+                <li> <a href="">About</a></li>
+                <li> <a href="">Products</a></li>
+                <li> <a href="page.php">Registration Page</a></li>
+                
+            </ul>
+        </nav>
+        <img src="images/cart.png" alt="" width="30px" height="30px">
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>
+
+    </div>
+
+    <!-- <form action="action_page.php" style="border:1px solid #ccc">
+        <h1 style="text-align: center;">Login</h1>
+
+        <div class="container">
+            <label for="uname"><b>Username: </b></label>
+            <input type="text" placeholder="Enter number/mail" name="uname" required><br><br>
+
+            <label for="psw"><b>Password: </b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+            <button type="submit">Login</button>
+            <button type="button" class="cancelbtn">Cancel</button>
+
+        </div>
+
+        <div>
+            <label>If not registered then </label>
+            <a href="signup.html">Signup</a>
+        </div>
+
+        <div class="container">
+
+            <br><span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form> -->
+
+    <div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form action="action_page.php" style="border:1px solid #ccc" class="login100-form validate-form">
+					<span class="login100-form-logo">
+						<i class="zmdi zmdi-landscape"></i>
+					</span>
+
+					<span class="login100-form-title p-b-34 p-t-27">
+						Log in
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+						<input class="input100" type="text" name="username" placeholder="Username">
+						<span class="focus-input100" data-placeholder="&#xf207;"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100" data-placeholder="&#xf191;"></span>
+					</div>
+
+					<div class="contact100-form-checkbox">
+						<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+						<label class="label-checkbox100" for="ckb1">
+							Remember me
+						</label>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+
+					<!-- <div class="text-center p-t-90">
+						<a class="txt1" href="#">
+							Forgot Password?
+						</a>
+					</div> -->
+				</form>
+			</div>
+		</div>
+	</div>
+
+    
+<!--------footer------->
+<div class="footer">
+    <div class="conatiner">
+        <div class="row">
+            
+            <div class="footer-col-2">
+                <img src="" alt="">
+                <p>Janapada Loka</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li> 
+                </ul>   
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li> 
+                </ul>   
+            </div>
+        </div>
+        <hr> 
+        <p class="copyright">Copyright 2022</p>
+    </div>
+</div>
+
+<!--js for toggle menu-->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px"){
+            MenuItems.style.maxHeight ="200px"
+        }
+        else{
+            MenuItems.style.maxHeight="0px"
+        }
+    }
+</script>
+
+
+
+</body>
+
+</html>
